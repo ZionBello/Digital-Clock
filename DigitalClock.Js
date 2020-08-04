@@ -32,5 +32,7 @@ strokeWeight(10);
   if(min < 10)
     min = "0"+min
   Hour%=12
+    if(Hour == 0) { 
+      Hour = 12}
   text(Hour+":"+min+":"+secs+noon, clockX + 100, clockY + 240); 
 }
